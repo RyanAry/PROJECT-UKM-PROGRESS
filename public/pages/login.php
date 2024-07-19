@@ -1,5 +1,5 @@
 <?php
-    include '../../conf/db.php';
+include '../../conf/login.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +24,7 @@
                 <!-- Login form container -->
                 <div class="w-1/2 p-6 font-poppins">
                     <h1 class="py-5 font-bold text-2xl text-center">Login</h1>
-                    <form action="" class="space-y-6">
+                    <form action="../../conf/login.php" method="post" class="space-y-6">
                         <div>
                             <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
                             <input type="text" name="username" id="username" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
@@ -34,10 +34,17 @@
                             <input type="password" name="password" id="password" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                         </div>
                         <div>
-                            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            <button type="submit" name="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                 Sign In
                             </button>
                         </div>
+                        <?php
+                            if (isset($_SESSION['error'])) {
+                                $error_msg = $_SESSION['error'];
+                                echo '<p class="text-center" style="color: red;">' . $error_msg . '</p>';
+                                unset($_SESSION['error']);
+                            }
+                        ?>
                         <p class="text-center">
                             Doesn't Have an Account? <a href="signup.php" class="text-indigo-600 hover:text-indigo-900">Sign Up</a>
                         </p>

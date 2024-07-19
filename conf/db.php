@@ -2,9 +2,9 @@
 $host = "localhost";
 $username = "root";
 $pass = "";
-$db = "app";
+$database = "app";
 
-$db = new mysqli($host,$username,$pass,$db);
+$db = new mysqli($host,$username,$pass,$database);
 
 if($db){
     //echo"Berhasil";

@@ -1,6 +1,3 @@
-<?php
-    include '../../conf/db.php'
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +21,7 @@
                 <!-- Login form container -->
                 <div class="w-1/2 p-6 font-poppins">
                     <h1 class="py-5 font-bold text-2xl text-center">Sign Up</h1>
-                    <form action="../../conf/register.php" class="space-y-6">
+                    <form action="../../conf/register.php" method="post" class="space-y-6">
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                             <input type="text" name="email" id="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
@@ -42,7 +39,7 @@
                             <input type="password" name="password" id="password" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                         </div>
                         <div>
-                            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            <button type="submit" name="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                 Sign Up
                             </button>
                         </div>
