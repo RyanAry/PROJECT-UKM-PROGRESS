@@ -1,4 +1,7 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 $host = "localhost";
 $username = "root";
 $pass = "";

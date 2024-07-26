@@ -14,6 +14,9 @@ module.exports = {
         'poppins': ['Poppins'],
         'montserrat': ['Montserrat'],
       },
+      margin: {
+        '128px': '128px',
+      },
     },
   },
   plugins: [],

@@ -9,6 +9,7 @@ include '../../conf/login.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" /> -->
     <title>TWENT4OUR</title>
 </head>
 
@@ -20,10 +21,12 @@ include '../../conf/login.php';
                     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div class="flex h-16 items-center justify-between">
                             <div class="flex items-center">
-                                <div class="flex flex-shrink-0 gap-3">
-                                    <img class="h-9 w-auto" src="../img/notext_logo.png" alt="Your Company">
-                                    <p class="font-poppins text-white pt-1 text-2xl font-bold">TWENT4OUR</p>
-                                </div>
+                                <a href="index.php">
+                                    <div class="flex flex-shrink-0 gap-3">
+                                        <img class="h-9 w-auto" src="../img/notext_logo.png" alt="Your Company">
+                                        <p class="font-poppins text-white pt-1 text-2xl font-bold">TWENT4OUR</p>
+                                    </div>
+                                </a>
                                 <div class="hidden md:block">
                                     <div class="ml-10 flex items-baseline space-x-4">
                                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -37,24 +40,25 @@ include '../../conf/login.php';
                                     <!-- Profile dropdown -->
                                     <div class="relative ml-3">
                                         <div>
-                                        <?php if(isset($_SESSION['username'])){
-                                        echo'<button @click="isOpen = !isOpen" type="button" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                            <span class="absolute -inset-1.5"></span>
-                                            <span class="sr-only">Open user menu</span>
-                                            <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                                        </button>';
-                                        }else{
-                                            echo'<a href="login.php" class="px-4 py-2 text-white">Sign In</a>';
-                                            echo'<a href="signup.php" class="px-6 py-3 bg-transparent border-2 text-white hover:bg-white hover:text-primary transition duration-300 ease-in-out rounded-md">Sign Up</a>';
-                                        } ?>
+                                            <?php if (isset($_SESSION['username'])) {
+                                                echo '<button @click="isOpen = !isOpen" type="button" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                                <span class="absolute -inset-1.5"></span>
+                                                <span class="sr-only">Open user menu</span>
+                                                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24" style="display: block;">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                </svg>
+                                                </button>';
+                                            } else {
+                                                echo '<a href="login.php" class="px-4 py-2 text-white">Sign In</a>';
+                                                echo '<a href="signup.php" class="px-6 py-3 bg-transparent border-2 text-white hover:bg-white hover:text-primary transition duration-300 ease-in-out rounded-md">Sign Up</a>';
+                                            } ?>
                                         </div>
                                         <div x-show="isOpen" x-transition:enter="transition ease-out duration-100 transform" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-75 transform" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                                             <!-- Active: "bg-gray-100", Not Active: "" -->
-                                            <h1 class="block px-4 pt-2 text-sm text-gray-700 font-bold font-poppins"><?php echo $_SESSION['nama']?></h1>
-                                            <p class="px-4 pb-3 text-sm text-gray-700 font-montserrat"><?php echo $_SESSION['email']?></p>
+                                            <h1 class="block px-4 pt-2 text-sm text-gray-700 font-bold font-poppins"><?php echo $_SESSION['nama'] ?></h1>
+                                            <p class="px-4 pb-3 text-sm text-gray-700 font-montserrat"><?php echo $_SESSION['email'] ?></p>
                                             <hr class="">
-                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+                                            <a href="partner.php" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Join Partner</a>
                                             <a href="../../conf/logout.php" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
                                         </div>
                                     </div>
@@ -90,8 +94,8 @@ include '../../conf/login.php';
                                     <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                                 </div>
                                 <div class="ml-3">
-                                    <div class="text-base font-medium leading-none text-white"><?php echo $_SESSION['nama']?></div>
-                                    <div class="text-sm font-medium leading-none text-gray-400"><?php echo $_SESSION['email']?></div>
+                                    <div class="text-base font-medium leading-none text-white"><?php echo $_SESSION['nama'] ?></div>
+                                    <div class="text-sm font-medium leading-none text-gray-400"><?php echo $_SESSION['email'] ?></div>
                                 </div>
                             </div>
                             <div class="mt-3 space-y-1 px-2">

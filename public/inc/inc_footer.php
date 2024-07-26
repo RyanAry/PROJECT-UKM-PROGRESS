@@ -13,9 +13,6 @@
                                 <a href="#" class="block py-2"><i class="fa-brands fa-x-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="block py-2"><i class="fa-regular fa-envelope"></i></a>
-                            </li>
-                            <li>
                                 <a href="#" class="block py-2"><i class="fa-brands fa-youtube"></i></a>
                             </li>
                         </ul>
@@ -29,5 +26,6 @@
     </div>
     <!-- icon -->
     <script src="https://kit.fontawesome.com/1f19972d51.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script> -->
 </body>
 </html>
