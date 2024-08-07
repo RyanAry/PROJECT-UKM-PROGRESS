@@ -1,4 +1,4 @@
-<h1>Project UKM PROGRESS</h1>
+<h1>Project UKM PROGRESS | Team 24</h1>
 <br>
 <p>Simple Project about tourism services</p>
 
