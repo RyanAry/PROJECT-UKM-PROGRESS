@@ -13,7 +13,7 @@ error_reporting(0);
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <!-- flowbite -->
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 
     <!-- sweet aleart -->
@@ -38,8 +38,8 @@ error_reporting(0);
                                 </a>
                                 <div class="hidden md:block">
                                     <div class="ml-10 flex items-baseline space-x-4">
-                                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                         <a href="hotel.php" class="px-3 py-2 text-sm font-medium text-white">Hotel</a>
+                                        <a href="pengajuan_partner.php" class="block rounded-md px-3 py-2 text-base font-medium text-white">Join Partner</a>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +66,6 @@ error_reporting(0);
                                             <h1 class="block px-4 pt-2 text-sm text-gray-700 font-bold font-poppins"><?php echo $_SESSION['nama'] ?></h1>
                                             <p class="px-4 pb-3 text-sm text-gray-700 font-montserrat"><?php echo $_SESSION['email'] ?></p>
                                             <hr class="">
-                                            <a href="pengajuan_partner.php" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Join Partner</a>
                                             <a href="booking_list.php" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">My Booking List</a>
                                             <a href="../../conf/logout.php" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
                                         </div>
@@ -94,20 +93,17 @@ error_reporting(0);
                     <!-- Mobile menu, show/hide based on menu state. -->
                     <div x-show="isOpen" class="md:hidden" id="mobile-menu">
                         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-                            <a href="#" class="block px-3 py-2 text-base font-medium text-white">Hotel</a>
+                            <a href="hotel.php" class="px-3 py-2 text-sm font-medium text-white">Hotel</a>
+                            <a href="pengajuan_partner.php" class="block rounded-md px-3 py-2 text-base font-medium text-white">Join Partner</a>
                         </div>
                         <div class="border-t border-gray-700 pb-3 pt-4">
                             <div class="flex items-center px-5">
-                                <div class="flex-shrink-0">
-                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                                </div>
                                 <div class="ml-3">
                                     <div class="text-base font-medium leading-none text-white"><?php echo $_SESSION['nama'] ?></div>
                                     <div class="text-sm font-medium leading-none text-gray-400"><?php echo $_SESSION['email'] ?></div>
                                 </div>
                             </div>
                             <div class="mt-3 space-y-1 px-2">
-                                <a href="pengajuan_partner.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Join Partner</a>
                                 <a href="booking_list.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">My Booking List</a>
                                 <a href="../../conf/logout.php" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign out</a>
                             </div>

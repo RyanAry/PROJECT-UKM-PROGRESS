@@ -2,6 +2,19 @@
 include '../inc/inc_header.php';
 include '../../conf/home.php';
 ?>
+<!-- hero -->
+<section class="container-fluid relative">
+    <div class="hero h-96">
+        <img src="../img/hero.jpg" alt="" class="img-fluid w-full h-full object-cover">
+        <!-- Dark overlay panel -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-75"></div>
+        <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center font-poppins text-white">
+            <h1 class="text-5xl font-bold mb-4">WELCOME TRAVELLERS</h1>
+            <p>Let's discover the world and find yourself on a journey without limits, we will always be there for you.</p>
+        </div>
+    </div>
+</section>
+<!-- end hero -->
 <section class="container-fluid">
     <div class="body bg-white">
         <div class="hotel max-w-4xl mx-auto">
