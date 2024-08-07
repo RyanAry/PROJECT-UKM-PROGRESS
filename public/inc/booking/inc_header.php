@@ -1,6 +1,20 @@
 <?php
 include '../../conf/db.php';
 error_reporting(0);
+
+$email = $_SESSION['email'];
+$username = $_SESSION['username'];
+
+$sql = "SELECT * FROM user WHERE email = '$email'";
+$user = mysqli_query($db, $sql);
+$data_admin = mysqli_fetch_assoc($user);
+
+if ($email == "" || $user->num_rows == 0) {
+    $_SESSION['status'] = 'Error';
+    $_SESSION['error_msg'] = 'Anda harus login terlebih dahulu sebelum melakukan booking';
+    header("Location: login.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en" class="h-full">
@@ -22,7 +36,7 @@ error_reporting(0);
     <title>TWENT4OUR</title>
 </head>
 
-<body class="h-full bg-gray-100">
+<body class="h-screen bg-gray-100">
     <div class="app">
         <header>
             <div class="min-h-full">

@@ -10,6 +10,6 @@ $database = "app";
 $db = new mysqli($host,$username,$pass,$database);
 
 if($db){
-    //echo"Berhasil";
+    // echo"Berhasil";
 }
 ?>

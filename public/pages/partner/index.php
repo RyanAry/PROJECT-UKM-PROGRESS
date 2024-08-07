@@ -1,5 +1,5 @@
 <?php
-include '../../inc/dashboard/admin/inc_main.php';
+include '../../inc/dashboard/partner/inc_main.php';
 ?>
 <div class="p-4 sm:ml-64">
     <div class="main py-10">

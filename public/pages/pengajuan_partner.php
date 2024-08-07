@@ -1,5 +1,4 @@
 <?php
-include '../../conf/partner.php';
 include '../inc/inc_header.php';
 ?>
 <!-- hero -->
@@ -81,7 +80,7 @@ include '../inc/inc_header.php';
             <h1 class="text-center font-poppins font-bold text-3xl pt-11 pb-3 uppercase">Formulir Pendaftaran Mitra</h1>
             <hr class="w-1/2 mx-auto mb-4 border-t-4">
             <div class="flex items-center justify-center pb-8">
-                <form action="../../conf/partner.php" method="post">
+                <form action="../../conf/pengajuan_partner.php" method="post">
                     <div class="bg-white rounded-lg p-8 w-full max-w-4xl">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                             <div>
@@ -89,7 +88,7 @@ include '../inc/inc_header.php';
                                 <select name="akomodasi" id="akomodasi" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
                                     <option value="hotel">Hotel</option>
                                     <option value="villa">Villa</option>
-                                    <option value="apartemen">Apartemen</option>
+                                    <option value="apartemen">Objek Wisata</option>
                                 </select>
                             </div>
                             <div>
@@ -114,7 +113,9 @@ include '../inc/inc_header.php';
                             </div>
                         </div>
                         <div>
-                            <button type="submit" name="submit" class="w-full bg-primary text-white font-bold py-2 px-4 rounded">Kirim</button>
+                            <button type="submit" name="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                                Kirim
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -158,35 +159,9 @@ include '../inc/inc_header.php';
         </div>
     </div>
 </section>
-<!-- error modal msg -->
-<?php if (isset($_SESSION['error']) || isset($_SESSION['success'])): ?>
-    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75">
-        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
-            <?php if (isset($_SESSION['error'])): ?>
-                <h2 class="text-2xl font-bold mb-4 text-red-600">Error!</h2>
-                <p class="text-red-600"><?php echo $_SESSION['error']; ?></p>
-                <button onclick="closeModal()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded">Close</button>
-            <?php elseif (isset($_SESSION['success'])): ?>
-                <h2 class="text-2xl font-bold mb-4">Success!</h2>
-                <p class="text-green-600"><?php echo $_SESSION['success']; ?></p>
-                <button onclick="closeModal()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Close</button>
-            <?php endif; ?>
-        </div>
-    </div>
-    <script>
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-        window.onload = function() {
-            document.getElementById('modal').style.display = 'flex';
-        }
-    </script>
-    <?php 
-        unset($_SESSION['error']); 
-        unset($_SESSION['success']); 
-    endif; 
-?>
 
+<!-- alert message -->
 <?php
+include '../inc/alert.php';
 include '../inc/inc_footer.php';
 ?>

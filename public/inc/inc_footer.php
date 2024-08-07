@@ -23,9 +23,7 @@
                 </div>
             </div>
         </footer>
-    </div>
     <!-- icon -->
     <script src="https://kit.fontawesome.com/1f19972d51.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script> -->
 </body>
 </html>

@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $pass = $_POST['password'];
 
     //error message
-    $error_msg = "Pengguna Sudah Terdaftar";
+    $error_msg = "Email Atau Username Sudah Terdaftar";
 
     //cek data
     $cek = "SELECT * FROM `user` WHERE username = '$username' OR email = '$email'";
