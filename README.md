@@ -3,5 +3,4 @@
 <p>Simple Project about tourism services</p>
 
 
-<p>Feature</p>
-<hr>
+<p>NB : Not Responsive </p>
