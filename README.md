@@ -7,8 +7,8 @@
 AUTH:
 <ul>
 <li>normal user</li>
-<li>admin partner (handling booking, and anything related about the hotel)</li>
-<li>app admin (handling the website)</li>
+<li>admin partner (handling booking request, and anything related about the hotel)</li>
+<li>app admin (handling the website, partnership program,etc)</li>
 </ul>
 
 
