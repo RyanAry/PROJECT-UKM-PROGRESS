@@ -4,6 +4,6 @@
 
 <p>Tech: Tailwindcss, php </p>
 
-<p>NB #1: Not Responsive </p>
+<p>NB: Not Responsive </p>
 
 
