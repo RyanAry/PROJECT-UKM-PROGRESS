@@ -4,6 +4,14 @@
 
 <p>Tech: Tailwindcss, php </p>
 
-<p>NB: Not Responsive </p>
+access rights:
+<ul>
+<li>normal user</li>
+<li>admin partner (handling booking, and anything related about the hotel)</li>
+<li>app admin (handling the website)</li>
+</ul>
+
+
+<p>NB: Not Responsive, and the database are empty (only 1 data on app admin) </p>
 
 
