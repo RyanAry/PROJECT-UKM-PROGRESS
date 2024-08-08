@@ -4,7 +4,7 @@
 
 <p>Tech: Tailwindcss, php </p>
 
-user access rights:
+AUTH:
 <ul>
 <li>normal user</li>
 <li>admin partner (handling booking, and anything related about the hotel)</li>
