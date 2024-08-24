@@ -5,7 +5,7 @@ include '../../../conf/partner/admin.php';
 <div class="p-4 sm:ml-64">
     <div class="main py-10">
         <div class="header pt-10 sm:pt-0">
-            <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl  font-poppins uppercase">Daftar Admin</h1>
+            <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl font-gatwick uppercase">Daftar Admin</h1>
             <p class="font-semibold font-montserrat">Partner</p>
             <hr class="mb-4 border-t-4">
         </div>

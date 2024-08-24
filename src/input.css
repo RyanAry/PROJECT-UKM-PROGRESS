@@ -4,3 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "gatwick";
+    src: url("../public/font/gatwick/PPGatwick-Bold.otf");
+}

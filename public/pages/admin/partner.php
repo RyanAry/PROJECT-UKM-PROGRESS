@@ -5,7 +5,7 @@ include '../../../conf/admin/partner.php';
 <div class="p-4 sm:ml-64">
     <div class="main py-10">
         <div class="header pt-10 sm:pt-0">
-            <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl  font-poppins uppercase">Daftar Partner</h1>
+            <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-3xl  font-gatwick uppercase">Daftar Partner</h1>
             <p class="font-semibold font-montserrat">Partner</p>
             <hr class="mb-4 border-t-4">
         </div>
@@ -67,7 +67,7 @@ include '../../../conf/admin/partner.php';
                                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                                         </svg>
                                                         <h3 class="mb-5 text-lg font-montserrat text-black">Anda yakin ingin menghapus partner ini?</h3>
-                                                        <form action="../../../conf/admin/partner.php" method="post">
+                                                        <form action="" method="post">
                                                             <!-- Fixed hidden input field and button types -->
                                                             <input type="hidden" name="id" value="<?php echo $data['id_partner'] ?>"> <!-- Fixed hidden input field here -->
                                                             <button name="delete" data-modal-hide="popup-modal-delete<?php echo $data['id_partner'] ?>" type="submit" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">

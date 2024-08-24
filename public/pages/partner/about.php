@@ -7,7 +7,7 @@ include '../../../conf/partner/about.php';
 <div class="p-4 sm:ml-64">
     <div class="main py-10">
         <div class="text-header">
-            <h1 class="font-poppins text-black font-bold text-4xl">About</h1>
+            <h1 class="font-gatwick text-black font-bold text-4xl">About</h1>
             <p class="font-montserrat text-black font-semibold">Hotel</p>
         </div>
         <div class="form py-8">

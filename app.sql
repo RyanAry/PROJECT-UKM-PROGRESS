@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Aug 07, 2024 at 11:13 AM
+-- Host: localhost:3306
+-- Generation Time: Aug 24, 2024 at 06:36 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.3.9
 
@@ -201,43 +201,43 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `app_admin`
 --
 ALTER TABLE `app_admin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id_booking` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_booking` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `partner`
 --
 ALTER TABLE `partner`
-  MODIFY `id_partner` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+  MODIFY `id_partner` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT for table `partner_admin`
 --
 ALTER TABLE `partner_admin`
-  MODIFY `id_admin` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_admin` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `pengajuan_partner`
 --
 ALTER TABLE `pengajuan_partner`
-  MODIFY `id_pengajuan` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `id_pengajuan` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
-  MODIFY `id_room` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_room` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

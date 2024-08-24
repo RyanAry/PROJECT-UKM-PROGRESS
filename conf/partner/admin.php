@@ -37,7 +37,7 @@
     }   else if (isset($_POST['delete'])) {
         $id = $_POST['id'];
 
-        $query_delete = "DELETE FROM `partner_admin` WHERE `id` = '$id'";
+        $query_delete = "DELETE FROM `partner_admin` WHERE `id_admin` = '$id'";
         $delete = mysqli_query($db, $query_delete);
 
         $msg_success = "Data berhasil dihapus";

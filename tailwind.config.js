@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins'],
         'montserrat': ['Montserrat'],
+        'gatwick': ['gatwick'],
       },
       margin: {
         '128px': '128px',

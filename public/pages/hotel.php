@@ -20,15 +20,8 @@ include '../../conf/home.php';
         <div class="hotel max-w-4xl mx-auto">
             <h1 class="text-3xl font-poppins font-bold pt-20">Hotels</h1>
             <?php
-            $akomodasi_list = [];
             while ($akomodasi = mysqli_fetch_assoc($select_akomodasi)) {
-                $akomodasi_list[] = $akomodasi;
-            }
-
-            for ($i = 0; $i < 4; $i++) {
-                if (isset($akomodasi_list[$i])) {
-                    $akomodasi = $akomodasi_list[$i];
-            ?>
+                ?>
                     <a href="detail_hotel.php?id=<?php echo $akomodasi['id_partner'];?>">
                         <div class="mx-auto">
                             <div class="card-hotels flex shadow-lg my-8 rounded-lg border border-gray-200">
@@ -60,7 +53,6 @@ include '../../conf/home.php';
                     </a>
             <?php
                 }
-            }
             ?>
         </div>
     </div>

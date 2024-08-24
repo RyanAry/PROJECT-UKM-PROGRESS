@@ -6,7 +6,7 @@ include '../../../conf/partner/room.php';
 <div class="p-4 sm:ml-64">
     <div class="main py-10">
         <div class="head-text">
-            <h1 class="text-4xl font-poppins font-semibold">Room</h1>
+            <h1 class="text-4xl font-gatwick font-semibold">Room</h1>
             <p class="text-xl">Hotel</p>
         </div>
         <div class="mt-5">
@@ -19,7 +19,17 @@ include '../../../conf/partner/room.php';
                             <img src="../../../asset/room/<?php echo $row['gambar'] ?>" alt="">
                             <div class="py-3 flex justify-between">
                                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><?php echo $row['nama'] ?></h5>
-                                <p><?php echo $row['status'] ?></p>
+                                <?php
+                                if ($row['status'] == 'tersedia') {
+                                ?>
+                                    <p class="text-green-500 font-semibold">Tersedia</p>
+                                <?php
+                                } else {
+                                ?>
+                                    <p class="text-red-500 font-semibold">Tidak Tersedia</p>
+                                <?php
+                                }
+                                ?>
                             </div>
                             <div class="flex justify-between">
                                 <div class="text-body">
