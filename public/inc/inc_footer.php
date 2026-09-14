@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="mt-10">
-                    <p class="text-center">© 2024 TWENT4OUR. All rights reserved.</p>
+                    <p class="text-center">© 2024 Travora. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -33,7 +33,7 @@ if ($email == "" || $admin->num_rows == 0) {
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css" rel="stylesheet">
     <!-- tailwindcss -->
     <link rel="stylesheet" href="../../css/style.css">
-    <title>TWENT4OUR</title>
+    <title>Travora</title>
 </head>
 
 <body class="bg-gray-100">
@@ -50,7 +50,7 @@ if ($email == "" || $admin->num_rows == 0) {
                     </button>
                     <a href="index.php" class="flex ms-2 md:me-24">
                         <img src="../../img/notext_logo.png" class="h-8 me-3" alt="" />
-                        <span class="self-center text-xl font-bold sm:text-2xl text-white">TWENT4OUR</span>
+                        <span class="self-center text-xl font-bold sm:text-2xl text-white">Travora</span>
                     </a>
                 </div>
                 <div class="flex items-center">

@@ -19,7 +19,7 @@ error_reporting(0);
     <!-- sweet aleart -->
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>TWENT4OUR</title>
+    <title>Travora</title>
 </head>
 
 <body class="h-full bg-gray-100">
@@ -33,7 +33,7 @@ error_reporting(0);
                                 <a href="index.php">
                                     <div class="flex flex-shrink-0 gap-3">
                                         <img class="h-9 w-auto" src="../img/notext_logo.png" alt="Your Company">
-                                        <p class="font-poppins text-white pt-1 text-2xl font-bold">TWENT4OUR</p>
+                                        <p class="font-poppins text-white pt-1 text-2xl font-bold">Travora</p>
                                     </div>
                                 </a>
                                 <div class="hidden md:block">

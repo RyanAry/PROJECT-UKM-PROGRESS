@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>TWENT4OUR</title>
+    <title>Travora</title>
 </head>
 <body>
     <div class="flex items-center justify-center min-h-screen">
